@@ -1,40 +1,52 @@
-.navbarMain {
-    position: absolute;
-    width: 1440px;
-    height: 224px;
-    left: 0px;
-    top: 0px;
+.navbar {
+  //   background: rgba(163, 146, 209, 0.92);
+  background: url("../assets/navback.png");
+  width: 100vw;
+  height: 224px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 36px 58px;
+}
+.userInfo {
+  margin: 36px 58px;
 
-    background: rgba(163, 146, 209, 0.92);
+  &__pic {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__name {
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
-// .userInfo {
-//     // position: absolute;
-//     // width: 152px;
-//     // height: 247px;
-//     // // left: 1230px;
-//     // top: 36px;
-//     // // margin: 36px 58px 59px 1230px;
-//     &__name{
-//         position: absolute;
-//         width: 60px;
-//         height: 30px;
-//         left: 1266px;
-//         top: 148px;
+// // .userInfo {
+//     mar
+// //     // position: absolute;
+// //     // width: 152px;
+// //     // height: 247px;
+// //     // // left: 1230px;
+// //     // top: 36px;
+// //     // // margin: 36px 58px 59px 1230px;
+// //     &__name{
+// //         position: absolute;
+// //         width: 60px;
+// //         height: 30px;
+// //         left: 1266px;
+// //         top: 148px;
 
-//         font-family: Muli;
-//         font-style: normal;
-//         font-weight: normal;
-//         font-size: 24px;
-//         line-height: 30px;
-//         color: #4A4A4A;
-//     }
-//     &__pic{
-//         border-radius: 50%;
-//         width: 75px;
-//         height: 75px;
+// //         font-family: Muli;
+// //         font-style: normal;
+// //         font-weight: normal;
+// //         font-size: 24px;
+// //         line-height: 30px;
+// //         color: #4A4A4A;
+// //     }
+// /
 
-//     }
-
-//     // background: url(image.png);
-// }
+// //
+// // }

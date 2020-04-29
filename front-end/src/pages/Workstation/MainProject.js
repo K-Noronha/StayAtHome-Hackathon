@@ -1,28 +1,35 @@
 import React from "react";
+import { connect } from "react-redux";
 
-const MainProject = (props) => {
-  const { main } = props;
+const MainProject = ({ main }) => {
+  const { link, title, desc } = main;
   return (
-    <div>
+    <div className="mainProject">
+      <h1>{title}</h1>
       <iframe
         width="840"
         height="470"
-        src={main[0].link}
+        src={link}
         frameBorder="0"
         allow="autoplay; encrypted-media"
         allowFullScreen
-        title={main[0].title}
+        title={title}
       ></iframe>
+      <div className="mainProject__details">
+        <p className="mainProject__details--text">{desc}</p>
+        <button className="mainProject__details--button" onClick={() => null}>
+          Challenge A Friend
+        </button>
+      </div>
 
-      <p>{main[0].desc}</p>
-      <button onClick={() => null} className="bttnChallenge">
-        Challenge A Friend
-      </button>
-
-      <button onClick={() => null} className="bttnUpload">
+      <button className="mainProject__upload" onClick={() => null}>
         Upload
       </button>
     </div>
   );
 };
-export default MainProject;
+
+const mapStateToProps = (state) => ({
+  main: state.stationReducer,
+});
+export default connect(mapStateToProps)(MainProject);

@@ -1,15 +1,15 @@
 import React from "react";
-import '../../styling/Sidebar.scss';
 
 const Sidebar = (props) => {
   const { categories } = props;
 
   return (
-    <div className="sidebarMain">
+    <div className="sidebar">
       {categories.map((category, i) => {
         return (
-          <div key={i}>
-            <h5>{category.topic}</h5>
+          <div className="sidebar__category" key={i}>
+            <img src={category.icon} />
+            <h2>{category.topic}</h2>
           </div>
         );
       })}

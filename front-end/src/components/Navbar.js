@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import '../styling/Navbar.scss'
-import {Brian} from '../../src/Assets/BrianLogin_MacCheese.png';
-;
+import "../styling/Navbar.scss";
+import logo from "../assets/ShowTellLogo.png";
+
 const Navbar = (props) => {
   const { user } = props;
 
   return (
-    <div className="navbarMain">
-      <ul>
+    <div className="navbar">
+      {/* <ul>
         <Link to="/">
           <li>Show and Tell </li>
         </Link>
@@ -19,9 +19,12 @@ const Navbar = (props) => {
         <Link to="/workstation">
           <li>Workstation </li>
         </Link>
-      </ul>
+      </ul> */}
+      <div className="logo">
+        <img src={logo} />
+      </div>
       <div className="userInfo">
-        <img className="userInfo__pic" src={Brian}></img>
+        <img className="userInfo__pic" src={user.image} />
         <h2 className="userInfo__name">{user.name}</h2>
       </div>
     </div>

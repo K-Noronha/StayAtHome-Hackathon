@@ -1,5 +1,8 @@
+import profilepic from "../../assets/profilepic.png";
+
 const userState = {
-  name: "The Cure",
+  name: "Brian",
+  image: profilepic,
   work: [],
 };
 

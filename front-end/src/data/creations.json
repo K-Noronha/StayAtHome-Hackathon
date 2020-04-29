@@ -7,11 +7,13 @@
     "comments": [
       {
         "name": "Jessica Biel",
-        "text": "Great job anthony looks amazing"
+        "text": "Great job anthony looks amazing",
+        "profpic": "../../assets/jessica.png"
       },
       {
         "name": "Oscar De La Mora",
-        "text": "Awesome I'm going to try"
+        "text": "Awesome I'm going to try",
+        "profpic": "../../assets/jessica.png"
       }
     ]
   }
