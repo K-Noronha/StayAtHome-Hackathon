@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-
+import '../styling/Navbar.scss'
+import {Brian} from '../../src/Assets/BrianLogin_MacCheese.png';
+;
 const Navbar = (props) => {
   const { user } = props;
 
   return (
-    <div>
-      <h2>{user.name}</h2>
+    <div className="navbarMain">
       <ul>
         <Link to="/">
-          <li>Homepage </li>
+          <li>Show and Tell </li>
         </Link>
         <Link to="/profile">
           <li>Profile </li>
@@ -19,6 +20,10 @@ const Navbar = (props) => {
           <li>Workstation </li>
         </Link>
       </ul>
+      <div className="userInfo">
+        <img className="userInfo__pic" src={Brian}></img>
+        <h2 className="userInfo__name">{user.name}</h2>
+      </div>
     </div>
   );
 };
