@@ -9,20 +9,12 @@ const Navbar = (props) => {
 
   return (
     <div className="navbar">
-      {/* <ul>
-        <Link to="/">
-          <li>Show and Tell </li>
-        </Link>
-        <Link to="/profile">
-          <li>Profile </li>
-        </Link>
-        <Link to="/workstation">
-          <li>Workstation </li>
-        </Link>
-      </ul> */}
-      <div className="logo">
-        <img src={logo} />
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <img src={logo} />
+        </div>
+      </Link>
+
       <div className="userInfo">
         <img className="userInfo__pic" src={user.image} />
         <h2 className="userInfo__name">{user.name}</h2>

@@ -1,0 +1,17 @@
+.activityList {
+  &__title {
+    display: flex;
+    justify-self: space-between;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.activity {
+  &__image {
+    width: 315px;
+    height: 215px;
+  }
+}
