@@ -7,9 +7,9 @@ import { Provider } from "react-redux";
 import allReducers from "./redux/reducers";
 
 //components
-import Homepage from "./pages/Homepage";
-import Workstation from "./pages/Workstation";
-import Profile from "./pages/Profile";
+import Homepage from "./pages/Homepage/index.js";
+import Profile from "./pages/Profile/index.js";
+import Workstation from "./pages/Workstation/index.js";
 import Navbar from "./components/Navbar";
 
 function App() {

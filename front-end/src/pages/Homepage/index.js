@@ -1,6 +1,6 @@
 import React from "react";
 
-import categories from "../data/categories.json";
+import categories from "../../data/categories.json";
 
 const Homepage = () => {
   return (
